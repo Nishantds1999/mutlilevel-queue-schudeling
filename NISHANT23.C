@@ -11,7 +11,7 @@ int T1=3,T2=6,W[40],TA[40],TT,AW,ATA;     //T1,T2 is the interruption time,W:is 
 int i,min=1,number;
 float TW=0,TTA=0;
 printf("Arrival time should be in the ascending order\n");
-printf("ENTER NUMBER OF PROCESSES-");
+printf("ENTER NUMBER OF PROCESSES:-");
 scanf("%d",&count);
 for (i = 0; i < count; ++i)     //initialize the burst time and arrival time
 {
