@@ -127,3 +127,11 @@ for(k=0;k<3;++k)
 		printf("\nAW=%.2f",TW/number);         //print average time......
 		printf("\nATA=%.2f\n",TTA/number);    //print average turn around time.......
 	
+for (i = 0; i < count; ++i)
+		{
+		 if (REMAIN[i]>0)
+		{
+		printf("\n process p[%d] is terminated\n",i+1);
+		}
+	}
+	}
