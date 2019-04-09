@@ -6,11 +6,9 @@ int main()
 {
 int count,j,k,REMAIN[50],ARRIVAL[40],BURST[40],TIME=500000;
 static int COMPLETE[50];
-char p[40][30];
 int T1=3,T2=6,W[40],TA[40],TT,AW,ATA;     //T1,T2 is the interruption time,W:is waiting time of process,TA:turnaround time,TT:Total time,AW:average wait,ATA:average turn around..... 
 int i,min=1,number;
 float TW=0,TTA=0;
-printf("Arrival time should be in the ascending order\n");
 printf("ENTER NUMBER OF PROCESSES:-");
 scanf("%d",&count);
 for (i = 0; i < count; ++i)     //initialize the burst time and arrival time
@@ -32,12 +30,6 @@ for (i=0;i<count;++i)
 for(k=0;k<3;++k)
 {
     	if (k==0)
-		for (i=0;i<count;++i)
-		{
-			if (TIME<ARRIVAL[i] && REMAIN[i]!=0)
-			{
-				TIME=ARRIVAL[i];
-			}
 			if (BURST[i]>T1)
 			{
 				REMAIN[i]=BURST[i]-T1;
